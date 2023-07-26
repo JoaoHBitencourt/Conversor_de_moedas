@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Conversor</title>
+  <link rel="stylesheet" href="./style/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <header>Conversor de Moedas</header>
+    <form action="#">
+      <div class="amount">
+        <p>Insira o Valor</p>
+        <input type="text" value="1">
+      </div>
+      <div class="drop-list">
+        <div class="from">
+          <p>De</p>
+          <div class="select-box">
+            <img src="https://flagcdn.com/48x36/us.png" alt="flag">
+            <select></select>
+          </div>
+        </div>
+        <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+        <div class="to">
+          <p>Para</p>
+          <div class="select-box">
+            <img src="https://flagcdn.com/48x36/br.png" alt="flag">
+            <select></select>
+          </div>
+        </div>
+      </div>
+      <div class="exchange-rate">Obtendo Taxa de Câmbio...</div>
+      <button>Obter Taxa de Câmbio</button>
+    </form>
+  </div>
+  <script src="js/country-list.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
