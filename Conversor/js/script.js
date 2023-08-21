@@ -57,7 +57,7 @@ function getExchangeRate() {
         amountVal = 1
     }
     exchangeRateTxt.innerText = "Obtendo Taxa de Câmbio..."
-    let url = `https://v6.exchangerate-api.com/v6/YourAPIkey/latest/${fromCurency.value}`
+    let url = `https://v6.exchangerate-api.com/v6/1afda8009a5eb94dd3454b02/latest/${fromCurency.value}`
     fetch(url)
         .then(resp => resp.json()) // Buscando resposta da API e retornado o valor encontrado
         .then(result => {

@@ -55,7 +55,7 @@ form input {
 
 form input:focus {
   padding: 0 15px;
-  border: 2px solid #7635e8b8;  
+  border: 2px solid #7635e8b8;
   box-shadow: 0px 4px 14px 4px rgba(15, 23, 42, 0.14);
 }
 
@@ -80,6 +80,7 @@ form .drop-list {
   appearance: none;
   width: auto;
   font-size: 16px;
+  cursor: pointer;
   margin: 0 -5px 0 5px;
 }
 
@@ -92,14 +93,15 @@ form .drop-list {
 }
 
 .select-box select::-webkit-scrollbar-thumb {
-  background: #af39fea5 ;
+  background: #af39fea5;
   border-radius: 8px;
   border-right: 2px solid #FFF;
 }
 
 .select-box img {
-  max-width: 35px;
-  border-radius: 4px;
+  max-width: 40px;
+  border-radius: 2px;
+  padding-right: 8px;
 }
 
 .drop-list .icon {
@@ -119,4 +121,8 @@ form button {
   color: #FFF;
   cursor: pointer;
   background: radial-gradient(circle farthest-corner at center center, #7C17BF 0%, #350F42 100%);
+}
+
+button:hover {
+  box-shadow: 0 1px 5px #7C17BF;
 }
